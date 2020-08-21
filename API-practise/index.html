@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Practise</title>
+</head>
+<body>
+    <h1>JSON API Practise</h1>
+    <h2>JSON Means JavaScript Object Notation</h2>
+    <ul id="show-username"></ul>
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users/')
+        .then(response => response.json())
+        .then(json => displayUserName(json))
+
+        function displayUserName(users){
+            // console.log("users", users);
+            const userNames = users.map(user => user.username);
+            const ul = document.getElementById("show-username");
+            // console.log(userNames);
+            for(let i = 0; i < userNames.length; i++){
+                const user = userNames[i];
+                const li = document.createElement("li");
+                li.innerText = user;
+                ul.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>

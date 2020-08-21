@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored API</title>
+</head>
+<body>
+    <h1 id="activity"></h1>
+    <h3>Learn from: <a id="explore_link" href="">Visit this site</a></h3>
+
+    <!-- // random user  -->
+    <h1 id="randUser">Random User Show</h1>
+    <script>
+        function doSomething(){
+            fetch('http://www.boredapi.com/api/activity/')
+            .then(res => res.json())
+            .then( data => {
+                document.getElementById('activity').innerText = data.activity;
+            });
+        }
+        doSomething();
+        setInterval(() => {
+            doSomething();
+        }, 3000);
+
+        function randUserShow(){
+            fetch('https://randomuser.me/api/')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('randUser').results = data.randUser;
+            });
+        }
+        randUserShow();
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frame</title>
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame{
+            width: 300px;
+            height: 200px;
+            border: 10px solid yellowgreen;
+            border-radius: 15px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .photo-frame .photo img{
+            width: 100%;
+        }
+        .photo-frame:hover .photo img{
+            transform: scale(1.2);
+            transition: transform 1s;
+        }
+        .photo-details{
+            text-align: center;
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 0;
+            display: none;
+        }
+        .photo-frame:hover .photo-details{
+            display: block;
+            background-color: rgba(247, 247, 147, 0.3);
+            color: white;
+        }
+        .photo-frame:hover .photo-details h3{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Photo Album</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/1.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/2.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/3.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/4.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/3.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/4.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/1.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/album/2.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Photo Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae odio corrupti fugit culpa cum aliquam officia error consequatur cumque id!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

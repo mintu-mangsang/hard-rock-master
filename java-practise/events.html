@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <h1 onclick="alert ('Why you click me')">This is events</h1>
+    <button onclick="alert('Show Me off')">Click Me</button>
+
+    <button>Click Me</button>
+    <button id="2ndBtn">Click Me</button>
+    <button>Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+   var clickCheck = document.getElementById('2ndBtn');
+   clickCheck.onclick = function(){
+    console.log('Some one click this Second Button');
+   }
+   
+</script>
+</body>
+</html>

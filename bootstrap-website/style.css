@@ -1,0 +1,22 @@
+.topnav-right{
+    float: right;
+}
+.nav-link{
+    font-weight: 600px;
+    font-size: 25px;
+}
+.container{
+    padding-top: 60px;
+}
+.h1-color{
+    color: chocolate;
+}
+.header-text{
+    padding-top: 45px;
+}
+.latest-product-text{
+text-align: center;
+}
+.carousel-inner img{
+    height: 650px;
+}

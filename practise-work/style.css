@@ -1,0 +1,33 @@
+
+.container{
+    display: flex;
+}
+.box{
+    background-color: teal;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+
+}
+.box-2{
+    position: relative;
+    
+    border: 5px solid purple;
+}
+
+.box-1{
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+}
+.tank-1 img{
+    width: 550px;
+}
+.tank-2{
+    position: absolute;
+    left: 100px;
+}
+.tank-1{
+    position: relative;
+    z-index: 1;
+}
